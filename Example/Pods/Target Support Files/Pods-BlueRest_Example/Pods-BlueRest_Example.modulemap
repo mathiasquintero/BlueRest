@@ -1,0 +1,6 @@
+framework module Pods_BlueRest_Example {
+  umbrella header "Pods-BlueRest_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - BlueRest (0.1.0)
+
+DEPENDENCIES:
+  - BlueRest (from `../`)
+
+EXTERNAL SOURCES:
+  BlueRest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlueRest: 99e84120282c9014f3e4cb15b1806be4255395f6
+
+PODFILE CHECKSUM: 0f3ac16bb4a5b0c830818653c68d1f68aa54bff9
+
+COCOAPODS: 1.2.1

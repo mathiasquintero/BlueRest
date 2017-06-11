@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005222EBD53A13904ED0B197D66CFFFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */; };
+		357DE81347CE8A9CCC9E1E18F5CE2CEA /* Pods-BlueRest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E481A641536130315AF2EE2F2651CACF /* Pods-BlueRest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4075917D14B6F3B3453C82A4264E6187 /* BlueRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DEFEB3B883062734743F2C2252AE6B /* BlueRequest.swift */; };
+		50EB161D8C298228FD5E2F8FF0346B99 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5143D6E28F849C8CA5B22A76476A19E2 /* Sender.swift */; };
+		629018BE8536CAD0A9FEB33929782382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */; };
+		689975143547F5F304AA7A88F7C57384 /* BlueRest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0CA94E8FC9B3F25FD38B887C07EB994 /* BlueRest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D1C4177D4381B7C8B3537E51D2D255E /* Pods-BlueRest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56551C5667931870E25F51A9883C16D1 /* Pods-BlueRest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D04C7C837E806B91AFF94BE36EA85B9 /* BlueServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5A6A7780CBFEB1CFDCB9C9179AB7C /* BlueServer.swift */; };
+		90B3638A7FF5EAA71142208192977A06 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EA00AEA27063E54337CB3252DEA73FF /* CoreBluetooth.framework */; };
+		952051A767C094605EA2005F89C34478 /* Receiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B17AA347F97A6FE87AA75D2CDE7E3 /* Receiver.swift */; };
+		A39E097E84724F1A11A168393F446C07 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F142846ABAF35D5E79863F1469F7D /* Request.swift */; };
+		B848CFB1FED53AADA552831292D79214 /* BlueRest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BFD0709A0932DD40F23DE21CD6D5F /* BlueRest-dummy.m */; };
+		BDCB111F0FA7D6C1DFA20CCE747D9BF8 /* Pods-BlueRest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1756FF3E55F69B4D237AF385CB390DC /* Pods-BlueRest_Example-dummy.m */; };
+		C3534DB4C5486571CC587C65054E12BC /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DD11D790109B5AD34BF9D1277C492E /* Server.swift */; };
+		C71BA038105D8902E8750D01ACD8E954 /* Pods-BlueRest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F57F2DF00BB284E9747440CC6C8E0E1D /* Pods-BlueRest_Tests-dummy.m */; };
+		D56C9429BFF2B125CC2D458CA7ECECB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E76DBEB3CA3806B80D6637BA729127C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E28F5FB4EB2ED74C12F746BB2EC61F;
+			remoteInfo = BlueRest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		017B17AA347F97A6FE87AA75D2CDE7E3 /* Receiver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Receiver.swift; sourceTree = "<group>"; };
+		07A6BA37D78E8350C17994E1AE089BA9 /* Pods-BlueRest_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueRest_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1A366B0FCB2087E9F5F12FA509A47418 /* BlueRest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BlueRest.modulemap; sourceTree = "<group>"; };
+		1EA00AEA27063E54337CB3252DEA73FF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		3A3C034D746C074EB8B335D4BD0331A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4804B9B0833FA341E19DE82AEAD51F99 /* Pods-BlueRest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueRest_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5143D6E28F849C8CA5B22A76476A19E2 /* Sender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		53DD11D790109B5AD34BF9D1277C492E /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		56551C5667931870E25F51A9883C16D1 /* Pods-BlueRest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueRest_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5BF415BC5B157835B32489945A45A562 /* Pods-BlueRest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueRest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5CC3ACA0F1B73BAC515BF2AC4D291494 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B8CF46D9730B8C5ECD8CE6D92B71AD /* Pods-BlueRest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueRest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		64770F8B0CCD92F4431B72E0CF4A0A26 /* Pods-BlueRest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueRest_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		67212FAD5A162393507AEBAD3474BE66 /* Pods_BlueRest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueRest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0EE01ADAEC338DA07B957A7B87CB11 /* Pods-BlueRest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueRest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C0E09B5B871CDCAAA06EB519E561D6 /* Pods-BlueRest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlueRest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		754B934DF68910FCDBB59CF3667D6F9B /* BlueRest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueRest-prefix.pch"; sourceTree = "<group>"; };
+		7586958EEC7639AE157F9606D12BD22C /* BlueRest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlueRest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EF558CDB4B95FDD463A10E196E69FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94DD51D689BCC7242A0BA49C70DFA4DF /* Pods_BlueRest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueRest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E5A6A7780CBFEB1CFDCB9C9179AB7C /* BlueServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlueServer.swift; sourceTree = "<group>"; };
+		9D46694E0334DC1FB71A2D0B87CD0BDE /* Pods-BlueRest_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueRest_Example-resources.sh"; sourceTree = "<group>"; };
+		A0CA94E8FC9B3F25FD38B887C07EB994 /* BlueRest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BlueRest-umbrella.h"; sourceTree = "<group>"; };
+		A4533D5E90759237E08DE131DA3CAADC /* Pods-BlueRest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlueRest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A82C82D3037571121C828E30FECF9F85 /* Pods-BlueRest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlueRest_Example.modulemap"; sourceTree = "<group>"; };
+		B2DEFEB3B883062734743F2C2252AE6B /* BlueRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlueRequest.swift; sourceTree = "<group>"; };
+		C2B16211325793BC628BD9BA7FD6A007 /* Pods-BlueRest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueRest_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D1756FF3E55F69B4D237AF385CB390DC /* Pods-BlueRest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueRest_Example-dummy.m"; sourceTree = "<group>"; };
+		E1733D2AE0E1527ADFA08EE325BA17F0 /* Pods-BlueRest_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlueRest_Tests-resources.sh"; sourceTree = "<group>"; };
+		E481A641536130315AF2EE2F2651CACF /* Pods-BlueRest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlueRest_Example-umbrella.h"; sourceTree = "<group>"; };
+		EB769015BE703E1758D2AFA5E71962B5 /* Pods-BlueRest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlueRest_Tests.modulemap"; sourceTree = "<group>"; };
+		F025D2D5E44CC892416CB63B43E2A212 /* BlueRest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BlueRest.xcconfig; sourceTree = "<group>"; };
+		F57F2DF00BB284E9747440CC6C8E0E1D /* Pods-BlueRest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlueRest_Tests-dummy.m"; sourceTree = "<group>"; };
+		F58BFD0709A0932DD40F23DE21CD6D5F /* BlueRest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BlueRest-dummy.m"; sourceTree = "<group>"; };
+		F76F142846ABAF35D5E79863F1469F7D /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F9A17C81AB880A476E0DBA8254B69E40 /* Pods-BlueRest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlueRest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12183D676812A3F8553BFA96AFA299BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629018BE8536CAD0A9FEB33929782382 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14477B3863BAB6E8C629A80CD06E8FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005222EBD53A13904ED0B197D66CFFFB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4202079C2A0CF7E0E267B055F0C8A6DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B3638A7FF5EAA71142208192977A06 /* CoreBluetooth.framework in Frameworks */,
+				D56C9429BFF2B125CC2D458CA7ECECB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FBEE1207E68EA59DC67B09BF85937A5 /* BlueRest */ = {
+			isa = PBXGroup;
+			children = (
+				42D51A032B8998BC30F9B8B5088C897A /* BlueRest */,
+				65F0A9F220B92F81A5428DE61CEBFEE1 /* Support Files */,
+			);
+			name = BlueRest;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		10F29C2E611036D3FF49CCD451F880F3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3BDBA4FE0F735C668CDC6A8B75037BC /* Pods-BlueRest_Example */,
+				2B5196BE8603C39A6748880ECF0F90C4 /* Pods-BlueRest_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2B5196BE8603C39A6748880ECF0F90C4 /* Pods-BlueRest_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5CC3ACA0F1B73BAC515BF2AC4D291494 /* Info.plist */,
+				EB769015BE703E1758D2AFA5E71962B5 /* Pods-BlueRest_Tests.modulemap */,
+				F9A17C81AB880A476E0DBA8254B69E40 /* Pods-BlueRest_Tests-acknowledgements.markdown */,
+				62B8CF46D9730B8C5ECD8CE6D92B71AD /* Pods-BlueRest_Tests-acknowledgements.plist */,
+				F57F2DF00BB284E9747440CC6C8E0E1D /* Pods-BlueRest_Tests-dummy.m */,
+				07A6BA37D78E8350C17994E1AE089BA9 /* Pods-BlueRest_Tests-frameworks.sh */,
+				E1733D2AE0E1527ADFA08EE325BA17F0 /* Pods-BlueRest_Tests-resources.sh */,
+				56551C5667931870E25F51A9883C16D1 /* Pods-BlueRest_Tests-umbrella.h */,
+				6D0EE01ADAEC338DA07B957A7B87CB11 /* Pods-BlueRest_Tests.debug.xcconfig */,
+				64770F8B0CCD92F4431B72E0CF4A0A26 /* Pods-BlueRest_Tests.release.xcconfig */,
+			);
+			name = "Pods-BlueRest_Tests";
+			path = "Target Support Files/Pods-BlueRest_Tests";
+			sourceTree = "<group>";
+		};
+		3574A7B4CA01BC44D5A603524D45A8EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7586958EEC7639AE157F9606D12BD22C /* BlueRest.framework */,
+				67212FAD5A162393507AEBAD3474BE66 /* Pods_BlueRest_Example.framework */,
+				94DD51D689BCC7242A0BA49C70DFA4DF /* Pods_BlueRest_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42D51A032B8998BC30F9B8B5088C897A /* BlueRest */ = {
+			isa = PBXGroup;
+			children = (
+				FA865704EA7C25614F69F58CC2A27FA8 /* Classes */,
+			);
+			path = BlueRest;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708A1C830C0E998469D92C7BA82C2290 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65F0A9F220B92F81A5428DE61CEBFEE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A366B0FCB2087E9F5F12FA509A47418 /* BlueRest.modulemap */,
+				F025D2D5E44CC892416CB63B43E2A212 /* BlueRest.xcconfig */,
+				F58BFD0709A0932DD40F23DE21CD6D5F /* BlueRest-dummy.m */,
+				754B934DF68910FCDBB59CF3667D6F9B /* BlueRest-prefix.pch */,
+				A0CA94E8FC9B3F25FD38B887C07EB994 /* BlueRest-umbrella.h */,
+				3A3C034D746C074EB8B335D4BD0331A0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BlueRest";
+			sourceTree = "<group>";
+		};
+		708A1C830C0E998469D92C7BA82C2290 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1EA00AEA27063E54337CB3252DEA73FF /* CoreBluetooth.framework */,
+				93972F6957789C9E8A0EFA25275C82D1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E7B2D9BDDFACE9D424B9DAC9DD0CBB08 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3574A7B4CA01BC44D5A603524D45A8EE /* Products */,
+				10F29C2E611036D3FF49CCD451F880F3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B2D9BDDFACE9D424B9DAC9DD0CBB08 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FBEE1207E68EA59DC67B09BF85937A5 /* BlueRest */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F3BDBA4FE0F735C668CDC6A8B75037BC /* Pods-BlueRest_Example */ = {
+			isa = PBXGroup;
+			children = (
+				90EF558CDB4B95FDD463A10E196E69FF /* Info.plist */,
+				A82C82D3037571121C828E30FECF9F85 /* Pods-BlueRest_Example.modulemap */,
+				5BF415BC5B157835B32489945A45A562 /* Pods-BlueRest_Example-acknowledgements.markdown */,
+				A4533D5E90759237E08DE131DA3CAADC /* Pods-BlueRest_Example-acknowledgements.plist */,
+				D1756FF3E55F69B4D237AF385CB390DC /* Pods-BlueRest_Example-dummy.m */,
+				C2B16211325793BC628BD9BA7FD6A007 /* Pods-BlueRest_Example-frameworks.sh */,
+				9D46694E0334DC1FB71A2D0B87CD0BDE /* Pods-BlueRest_Example-resources.sh */,
+				E481A641536130315AF2EE2F2651CACF /* Pods-BlueRest_Example-umbrella.h */,
+				72C0E09B5B871CDCAAA06EB519E561D6 /* Pods-BlueRest_Example.debug.xcconfig */,
+				4804B9B0833FA341E19DE82AEAD51F99 /* Pods-BlueRest_Example.release.xcconfig */,
+			);
+			name = "Pods-BlueRest_Example";
+			path = "Target Support Files/Pods-BlueRest_Example";
+			sourceTree = "<group>";
+		};
+		FA865704EA7C25614F69F58CC2A27FA8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B2DEFEB3B883062734743F2C2252AE6B /* BlueRequest.swift */,
+				94E5A6A7780CBFEB1CFDCB9C9179AB7C /* BlueServer.swift */,
+				017B17AA347F97A6FE87AA75D2CDE7E3 /* Receiver.swift */,
+				F76F142846ABAF35D5E79863F1469F7D /* Request.swift */,
+				5143D6E28F849C8CA5B22A76476A19E2 /* Sender.swift */,
+				53DD11D790109B5AD34BF9D1277C492E /* Server.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EA446BF5F5A008E49672873E173456C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D1C4177D4381B7C8B3537E51D2D255E /* Pods-BlueRest_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F706CB59062F27C97EB0ED998EBAEE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				357DE81347CE8A9CCC9E1E18F5CE2CEA /* Pods-BlueRest_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC04DBA30EE62DF7227C1BDA06B0F0A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				689975143547F5F304AA7A88F7C57384 /* BlueRest-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05E28F5FB4EB2ED74C12F746BB2EC61F /* BlueRest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 878F9957949C275B459B235A2AF32BE5 /* Build configuration list for PBXNativeTarget "BlueRest" */;
+			buildPhases = (
+				0F3FF2C9A4E912ACFB277459C8B78AFF /* Sources */,
+				4202079C2A0CF7E0E267B055F0C8A6DE /* Frameworks */,
+				BC04DBA30EE62DF7227C1BDA06B0F0A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueRest;
+			productName = BlueRest;
+			productReference = 7586958EEC7639AE157F9606D12BD22C /* BlueRest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		336C197C73BB2B43EBA9CDF7927A014E /* Pods-BlueRest_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68739BAAB4930ADE160D187A6354FA8B /* Build configuration list for PBXNativeTarget "Pods-BlueRest_Example" */;
+			buildPhases = (
+				561A0ABDDF0DE95D7868D1C316BBADF5 /* Sources */,
+				14477B3863BAB6E8C629A80CD06E8FDE /* Frameworks */,
+				7F706CB59062F27C97EB0ED998EBAEE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64BBC965B787BE3B008372E5C0D38042 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlueRest_Example";
+			productName = "Pods-BlueRest_Example";
+			productReference = 67212FAD5A162393507AEBAD3474BE66 /* Pods_BlueRest_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5630C702AACE958FBD8DCE2F4703E9B /* Pods-BlueRest_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12568FAD40F1FDAC66A640A167ADE558 /* Build configuration list for PBXNativeTarget "Pods-BlueRest_Tests" */;
+			buildPhases = (
+				89B52A0D883F97F12647FAEE4355D694 /* Sources */,
+				12183D676812A3F8553BFA96AFA299BF /* Frameworks */,
+				1EA446BF5F5A008E49672873E173456C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BlueRest_Tests";
+			productName = "Pods-BlueRest_Tests";
+			productReference = 94DD51D689BCC7242A0BA49C70DFA4DF /* Pods_BlueRest_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3574A7B4CA01BC44D5A603524D45A8EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05E28F5FB4EB2ED74C12F746BB2EC61F /* BlueRest */,
+				336C197C73BB2B43EBA9CDF7927A014E /* Pods-BlueRest_Example */,
+				D5630C702AACE958FBD8DCE2F4703E9B /* Pods-BlueRest_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F3FF2C9A4E912ACFB277459C8B78AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4075917D14B6F3B3453C82A4264E6187 /* BlueRequest.swift in Sources */,
+				B848CFB1FED53AADA552831292D79214 /* BlueRest-dummy.m in Sources */,
+				7D04C7C837E806B91AFF94BE36EA85B9 /* BlueServer.swift in Sources */,
+				952051A767C094605EA2005F89C34478 /* Receiver.swift in Sources */,
+				A39E097E84724F1A11A168393F446C07 /* Request.swift in Sources */,
+				50EB161D8C298228FD5E2F8FF0346B99 /* Sender.swift in Sources */,
+				C3534DB4C5486571CC587C65054E12BC /* Server.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		561A0ABDDF0DE95D7868D1C316BBADF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDCB111F0FA7D6C1DFA20CCE747D9BF8 /* Pods-BlueRest_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B52A0D883F97F12647FAEE4355D694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71BA038105D8902E8750D01ACD8E954 /* Pods-BlueRest_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64BBC965B787BE3B008372E5C0D38042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueRest;
+			target = 05E28F5FB4EB2ED74C12F746BB2EC61F /* BlueRest */;
+			targetProxy = 7E76DBEB3CA3806B80D6637BA729127C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		051EBE74BB047093CE08C04C3E089CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64770F8B0CCD92F4431B72E0CF4A0A26 /* Pods-BlueRest_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueRest_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueRest_Tests/Pods-BlueRest_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueRest_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		256AF2684C9CB7836B9CE997BC0876FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C0E09B5B871CDCAAA06EB519E561D6 /* Pods-BlueRest_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueRest_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueRest_Example/Pods-BlueRest_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueRest_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32BA2D8C184C174D6702075870D8CF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0EE01ADAEC338DA07B957A7B87CB11 /* Pods-BlueRest_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueRest_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueRest_Tests/Pods-BlueRest_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueRest_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D144F724433A09597E3476A57631255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9BE64F074B19AA5034C3AC2638E22349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4804B9B0833FA341E19DE82AEAD51F99 /* Pods-BlueRest_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BlueRest_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlueRest_Example/Pods-BlueRest_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BlueRest_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6F9A50D673247ACC6CA109DFA5F5104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F025D2D5E44CC892416CB63B43E2A212 /* BlueRest.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BlueRest/BlueRest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueRest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlueRest/BlueRest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BlueRest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF51EDAB034E8CB32D98FE129E5F3A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F025D2D5E44CC892416CB63B43E2A212 /* BlueRest.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BlueRest/BlueRest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BlueRest/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BlueRest/BlueRest.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BlueRest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12568FAD40F1FDAC66A640A167ADE558 /* Build configuration list for PBXNativeTarget "Pods-BlueRest_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BA2D8C184C174D6702075870D8CF63 /* Debug */,
+				051EBE74BB047093CE08C04C3E089CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D144F724433A09597E3476A57631255 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68739BAAB4930ADE160D187A6354FA8B /* Build configuration list for PBXNativeTarget "Pods-BlueRest_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256AF2684C9CB7836B9CE997BC0876FD /* Debug */,
+				9BE64F074B19AA5034C3AC2638E22349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		878F9957949C275B459B235A2AF32BE5 /* Build configuration list for PBXNativeTarget "BlueRest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F9A50D673247ACC6CA109DFA5F5104 /* Debug */,
+				EF51EDAB034E8CB32D98FE129E5F3A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module BlueRest {
+  umbrella header "BlueRest-umbrella.h"
+
+  export *
+  module * { export * }
+}

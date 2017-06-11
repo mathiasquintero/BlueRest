@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BlueRest_Example' do
+  pod 'BlueRest', :path => '../'
+
+  target 'BlueRest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
