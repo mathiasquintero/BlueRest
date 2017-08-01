@@ -2,16 +2,16 @@
 import Foundation
 import CoreBluetooth
 
-struct Message: Codable {
-    let resource: String
-    let code: Int
-    let info: [String : String]
-    let body: Data?
+public struct Message: Codable {
+    public let resource: String
+    public let code: Int
+    public let info: [String : String]
+    public let body: Data?
 }
 
 extension Message {
     
-    func decode<V: Decodable>() throws -> V? {
+    public func decode<V: Decodable>() throws -> V? {
         guard let body = body else {
             return nil
         }
@@ -21,15 +21,15 @@ extension Message {
     
 }
 
-class RESTBLEServer {
+public class RESTBLEServer {
     
-    typealias ServerHandler = (Message, Response) -> Void
+    public typealias ServerHandler = (Message, Response) -> Void
     
-    struct Response {
+    public struct Response {
         let message: Message
         let response: Server.Response
         
-        func respond(with data: Data?,
+        public func respond(with data: Data?,
                      code: Int = 200,
                      info: [String : String] = [:]) {
             
@@ -38,7 +38,7 @@ class RESTBLEServer {
             response.respond(data: data)
         }
         
-        func respond<V: Encodable>(with value: V?,
+        public func respond<V: Encodable>(with value: V?,
                                    code: Int = 200,
                                    info: [String : String] = [:]) {
             
@@ -52,7 +52,7 @@ class RESTBLEServer {
     
     private let server: Server
     
-    init(uuid: CBUUID, handler: @escaping ServerHandler) {
+    public init(uuid: CBUUID, handler: @escaping ServerHandler) {
         server = Server(uuid: uuid) { request, response in
             guard let data = request.data,
                 let message = try? JSONDecoder().decode(Message.self, from: data) else {
@@ -64,11 +64,11 @@ class RESTBLEServer {
         }
     }
     
-    func start() {
+    public func start() {
         server.start()
     }
     
-    func stop() {
+    public func stop() {
         server.stop()
     }
     

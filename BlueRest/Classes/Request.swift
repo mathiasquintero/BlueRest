@@ -3,7 +3,7 @@ import CoreBluetooth
 
 var requests = [Request]()
 
-func fetch(uuid: CBUUID, device: UUID? = nil, data: Data? = nil, completion: @escaping (Request.Response) -> Void) {
+public func fetch(uuid: CBUUID, device: UUID? = nil, data: Data? = nil, completion: @escaping (Response) -> Void) {
     var called = false
     let request = Request(uuid: uuid, device: device, data: data) { request, response in
         called = true
@@ -19,12 +19,12 @@ func fetch(uuid: CBUUID, device: UUID? = nil, data: Data? = nil, completion: @es
     }
 }
 
+public struct Response {
+    let device: UUID
+    let data: Data?
+}
+
 class Request: NSObject {
-    
-    struct Response {
-        let device: UUID
-        let data: Data?
-    }
     
     typealias Completion = (Request, Response) -> Void
     

@@ -1,14 +1,14 @@
 
 import CoreBluetooth
 
-class Server: NSObject {
+public class Server: NSObject {
     
-    struct Request {
+    public struct Request {
         let device: UUID
         let data: Data?
     }
     
-    class Response {
+    public class Response {
         
         private var request: Request
         private unowned var server: Server
@@ -28,7 +28,7 @@ class Server: NSObject {
         
     }
     
-    typealias ServerHandler = (Request, Response) -> Void
+    public typealias ServerHandler = (Request, Response) -> Void
     
     private let uuid: CBUUID
     private let handler: ServerHandler
@@ -131,7 +131,7 @@ extension Server {
 
 extension Server: CBPeripheralManagerDelegate {
     
-    func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
+    public func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {
         case .poweredOn:
             peripheral.publishL2CAPChannel(withEncryption: true)
@@ -140,19 +140,19 @@ extension Server: CBPeripheralManagerDelegate {
         }
     }
     
-    func peripheralManager(_ peripheral: CBPeripheralManager, didPublishL2CAPChannel PSM: CBL2CAPPSM, error: Error?) {
+    public func peripheralManager(_ peripheral: CBPeripheralManager, didPublishL2CAPChannel PSM: CBL2CAPPSM, error: Error?) {
         print("Did publish")
         self.psm = PSM
         manager.startAdvertising(advertisementData)
     }
     
-    func peripheralManager(_ peripheral: CBPeripheralManager, didUnpublishL2CAPChannel PSM: CBL2CAPPSM, error: Error?) {
+    public func peripheralManager(_ peripheral: CBPeripheralManager, didUnpublishL2CAPChannel PSM: CBL2CAPPSM, error: Error?) {
         print("Did unpublish")
         self.psm = nil
         manager.stopAdvertising()
     }
     
-    func peripheralManager(_ peripheral: CBPeripheralManager, didOpen channel: CBL2CAPChannel?, error: Error?) {
+    public func peripheralManager(_ peripheral: CBPeripheralManager, didOpen channel: CBL2CAPChannel?, error: Error?) {
         guard error == nil, let channel = channel, let stream = channel.inputStream else {
             return
         }
